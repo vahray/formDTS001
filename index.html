@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <title>Project DTS D01</title>
+  </head>
+  <body>
+    <!-- Form -->
+    <div class="form">
+      <div class="img-kiri">
+        <img src="form.png" alt="IMAGE FORM" />
+      </div>
+      <div class="form-kanan">
+        <h1>Hubungi Kami</h1>
+        <br />
+        <form>
+          <label for="salute">Salutation <span class="req">*</span></label>
+          <br />
+          <select name="salute" id="salute" required>
+            <option value="" hidden selected disabled>Please Select</option>
+            <option value="1">Bapak</option>
+            <option value="2">Ibu</option>
+          </select>
+          <br />
+          <label for="name">Name <span class="req">*</span></label>
+          <br />
+          <input type="text" id="name" placeholder="Your Name" required />
+          <br />
+          <label for="email">Email <span class="req">*</span></label>
+          <br />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <br />
+          <label for="telp">Phone Number <span class="req">*</span></label>
+          <br />
+          <input type="telp" id="telp" placeholder="Your Phone Number" required />
+          <br />
+          <label for="comp">Company Name <span class="req">*</span></label>
+          <br />
+          <label class="opt" for="comp">Optional</label>
+          <br />
+          <input type="text" id="comp" placeholder="Your Company Name" required />
+          <br />
+          <label>Product of Interest</label>
+          <br /><br />
+          <label class="check" for="cek1"> <input type="checkbox" value="cek1" id="cek1" />Company Profile Website </label>
+          <br />
+          <label class="check" for="cek2"> <input type="checkbox" value="cek2" id="cek2" />eCommerce Website</label>
+          <br />
+          <label class="check" for="cek3"> <input type="checkbox" value="cek3" id="cek3" />Search Engine Optimisation (SEO)</label>
+          <br />
+          <label class="check" for="cek4"> <input type="checkbox" value="cek4" id="cek4" />Custom Web Based Application</label>
+          <br />
+          <label class="check" for="cek5"> <input type="checkbox" value="cek5" id="cek5" />Mobile Application (iOS - Android)</label>
+          <br />
+          <label class="check" for="cek6"> <input type="checkbox" value="cek6" id="cek6" />Company Profile Design</label>
+          <br /><br />
+          <label for="message">Message <span class="req">*</span></label>
+          <br />
+          <textarea name="message" id="message" cols="50" rows="3" placeholder="Your Message" required></textarea>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
